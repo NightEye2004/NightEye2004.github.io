@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AevonSMP: Philippine based Minecraft community. Java and Bedrock. Peace, order, and respect."
+    />
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="AevonSMP" />
+    <meta name="theme-color" content="#0a0806" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AevonSMP | Minecraft community server" />
+    <meta
+      property="og:description"
+      content="Philippine Minecraft SMP for Java and Bedrock. Peace, order, and respect."
+    />
+    <meta property="og:image" content="images/banner.jpg" />  
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <title>AevonSMP | Minecraft community server</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault();
+      }
+    });
+  
+    document.querySelectorAll("img").forEach(function(img) {
+      img.setAttribute("draggable", "false");
+    });
+  </script>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark site-navbar"
+      aria-label="Primary"
+    >
+      <div class="container-xl">
+        <a class="navbar-brand logo" href="#">Aevon<span>SMP</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavCollapse"
+          aria-controls="mainNavCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#connect">Connect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vote">Vote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#staff">Staff</a>
+            </li>
+            <li class="nav-item">
+              <span class="nav-soon">Wiki (soon)</span>
+            </li>
+            <li class="nav-item nav-item-cta ms-lg-2">
+              <a
+                class="btn btn-sm btn-aevon-primary nav-discord-btn"
+                href="https://dsc.gg/aevonsmp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join Discord</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="hero"
+      style="background-image: url('images/banner.jpg')"
+      aria-label="Server banner"
+    >
+      <div class="hero-content container-xl py-5 py-lg-6">
+        <p class="hero-eyebrow">Philippine Minecraft SMP · Java &amp; Bedrock</p>
+        <h1>Build, explore, and grow together</h1>
+        <p>
+          A Philippine based Minecraft community built on peace, order, and
+          respect. Fair play, mature chat, and a non-toxic space for Java and
+          Bedrock players.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-aevon-primary btn-lg" href="#connect">Connect</a>
+          <a class="btn btn-aevon-ghost btn-lg" href="#vote">Vote for us</a>
+          <a
+            class="btn btn-aevon-ghost btn-lg"
+            href="https://wermpay.com/servers/aevonsmp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Store</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <aside class="play-banner" data-reveal aria-label="Quick connect">
+      <div class="container-xl play-banner__inner">
+        <div class="play-banner__copy">
+          <p class="play-banner__label">
+            <span class="play-banner__pulse" aria-hidden="true"></span>
+            Ready to play
+          </p>
+          <p class="play-banner__address">
+            <code>aevonsmp.online</code>
+            <span class="play-banner__hint">Bedrock port <strong>19023</strong></span>
+          </p>
+        </div>
+        <div class="play-banner__actions">
+          <button
+            type="button"
+            class="btn btn-sm btn-aevon-primary btn-copy"
+            data-copy="aevonsmp.online"
+          >
+            Copy address
+          </button>
+          <a class="btn btn-sm btn-aevon-ghost" href="#connect">How to join</a>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main-content" class="container-xl site-main pb-5">
+      <section id="features" aria-labelledby="features-title">
+        <h2 id="features-title" class="section-title" data-reveal>Server features</h2>
+        <p class="section-lead" data-reveal>
+          Clear expectations: fair play, respectful chat, and staff you can reach
+          when something goes wrong.
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-reveal-stagger>
+          <div class="col" data-reveal>
+            <article class="aevon-card">
+            <h3>Community first</h3>
+            <p>
+              Respectful conduct is required: no harassment, toxicity, drama,
+              or disruption in-game or on Discord.
+            </p>
+            </article>
+          </div>
+          <div class="col" data-reveal>
+            <article class="aevon-card">
+            <h3>Fair play</h3>
+            <p>
+              Cheating, hacks, X-Ray, dupes, exploits, and griefing are not
+              allowed. Claim and secure your own builds and items.
+            </p>
+            </article>
+          </div>
+          <div class="col" data-reveal>
+            <article class="aevon-card">
+            <h3>Java &amp; Bedrock</h3>
+            <p>
+              Play from PC Java or Bedrock using the same hostname; Bedrock
+              uses the listed port.
+            </p>
+            </article>
+          </div>
+          <div class="col" data-reveal>
+            <article class="aevon-card">
+            <h3>Staff on Discord</h3>
+            <p>
+              Staff follow clear policies. Reach the team on Discord for help,
+              reports, and server news.
+            </p>
+            </article>
+          </div>
+          <div class="col" data-reveal>
+            <article class="aevon-card">
+            <h3>Voting &amp; growth</h3>
+            <p>
+              Support the server on the listing sites in the Vote section below.
+            </p>
+            </article>
+          </div>
+          <div class="col" data-reveal>
+            <article class="aevon-card">
+            <h3>Streamer friendly</h3>
+            <p>
+              Media policies support creators who represent the community well.
+              Staff and streamer applications open when announced on Discord.
+            </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" aria-labelledby="connect-title">
+        <h2 id="connect-title" class="section-title" data-reveal>Connect to AevonSMP</h2>
+        <p class="section-lead" data-reveal>
+          Copy the address for your edition. Bedrock players must use the
+          correct port.
+        </p>
+        <div class="row g-4 align-items-start mb-4">
+          <div class="col-lg-6">
+          <figure class="figure">
+            <img
+              src="images/connect_to_aevon.jpg"
+              alt="How to connect to AevonSMP"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+          </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="row row-cols-1 row-cols-md-3 g-3 ip-card-row">
+              <div class="col d-flex">
+                <div class="ip-box w-100">
+              <h4>Java Edition</h4>
+              <code id="ip-java">aevonsmp.online</code>
+              <button
+                type="button"
+                class="btn btn-sm btn-aevon-ghost btn-copy"
+                data-copy="aevonsmp.online"
+              >
+                Copy IP
+              </button>
+                </div>
+              </div>
+              <div class="col d-flex">
+                <div class="ip-box w-100">
+              <h4>Bedrock Edition</h4>
+              <code id="ip-bedrock">aevonsmp.online<br />Port 19023</code>
+              <button
+                type="button"
+                class="btn btn-sm btn-aevon-ghost btn-copy"
+                data-copy="aevonsmp.online"
+              >
+                Copy IP
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-aevon-ghost btn-copy ms-1 mt-1"
+                data-copy="19023"
+              >
+                Copy port
+              </button>
+                </div>
+              </div>
+              <div class="col d-flex">
+                <div class="ip-box w-100">
+              <h4>Alternative (numeric)</h4>
+              <code>Java: 185.207.166.124:19023</code>
+              <button
+                type="button"
+                class="btn btn-sm btn-aevon-ghost btn-copy"
+                data-copy="185.207.166.124:19023"
+              >
+                Copy Java
+              </button>
+              <p class="small text-secondary mt-2 mb-0">
+                Bedrock IP <strong>185.207.166.124</strong>, port
+                <strong>19023</strong>
+              </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vote" aria-labelledby="vote-title">
+        <h2 id="vote-title" class="section-title" data-reveal>Voting links</h2>
+        <p class="section-lead" data-reveal>
+          Voting helps new players discover AevonSMP. Thank you for your support.
+        </p>
+        <div class="row g-4 align-items-start">
+          <div class="col-md-6" data-reveal>
+          <figure class="figure">
+            <img
+              src="images/voting_links.jpg"
+              alt="Voting links graphic"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+            <figcaption>Vote for free vote keys</figcaption>
+          </figure>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <ul class="link-list">
+              <li>
+                <a
+                  href="https://minecraft-mp.com/server/357521/vote/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Minecraft-MP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.minerank.com/aevonsmp/vote#vote-now"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >MineRank</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://minecraftpocket-servers.com/server/133233/vote/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Minecraft Pocket Servers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://minecraft-serverlist.com/server/5059/vote"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Minecraft Server List</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title" class="section-title" data-reveal>FAQ</h2>
+        <p class="section-lead" data-reveal>
+          Short answers below. The official rulebook and updates stay on Discord.
+        </p>
+
+        <div data-reveal>
+        <details>
+          <summary>What is AevonSMP?</summary>
+          <div class="faq-body">
+            A Philippine-based Minecraft community built on peace, order, and
+            respect: structured rules, fair play, and a mature, non-toxic
+            environment for Java and Bedrock.
+          </div>
+        </details>
+        <details>
+          <summary>How do I join on Java vs Bedrock?</summary>
+          <div class="faq-body">
+            Use hostname <strong>aevonsmp.online</strong>. On Bedrock, set port
+            <strong>19023</strong>. If the hostname fails, use the numeric IP
+            from the Connect section with the same port for your edition.
+          </div>
+        </details>
+        <details>
+          <summary>Is griefing or stealing allowed?</summary>
+          <div class="faq-body">
+            No. Griefing, stealing, trapping, and damaging community areas are
+            against the rules. Unclaimed builds are not guaranteed protection, so
+            use claims and secure your items.
+          </div>
+        </details>
+        <details>
+          <summary>Can I use mods, macros, or “quality of life” cheats?</summary>
+          <div class="faq-body">
+            Cheating of any kind is forbidden, including unauthorized clients,
+            X-Ray, duplication glitches, exploits, and macros that give unfair
+            advantages. When in doubt, ask staff before using a mod.
+          </div>
+        </details>
+        <details>
+          <summary>How do I apply for staff or streamer / media?</summary>
+          <div class="faq-body">
+            We recruit dedicated people who can help keep the community safe and
+            positive. Use the Staff section below for application graphics and
+            check Discord for open forms or announcements.
+          </div>
+        </details>
+        <details>
+          <summary>Where are the full rules?</summary>
+          <div class="faq-body">
+            The written rulebook covers Minecraft and Discord: conduct,
+            gameplay, communication, staff authority, and privacy. Join Discord for
+            the latest version and help from staff.
+          </div>
+        </details>
+        </div>
+      </section>
+
+      <section id="shop" aria-labelledby="shop-title">
+        <h2 id="shop-title" class="section-title" data-reveal>Shop</h2>
+        <p class="section-lead" data-reveal>
+          Keys and premium ranks are available on our official store.
+        </p>
+        <p data-reveal class="mb-4">
+          <a
+            class="btn btn-aevon-primary"
+            href="https://wermpay.com/servers/aevonsmp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit store</a
+          >
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 g-4 shop-cards">
+          <div class="col" data-reveal>
+          <article class="aevon-card">
+            <h3>Keys</h3>
+            <p>
+              Crate keys and Acoins are listed on the
+              <a
+                href="https://wermpay.com/servers/aevonsmp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >official store</a
+              >.
+            </p>
+          </article>
+          </div>
+          <div class="col" data-reveal>
+          <article class="aevon-card">
+            <h3>Premium ranks</h3>
+            <p>
+              Perks and pricing are on the
+              <a
+                href="https://wermpay.com/servers/aevonsmp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >official store</a
+              >.
+            </p>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="staff" aria-labelledby="staff-title">
+        <h2 id="staff-title" class="section-title" data-reveal>Staff team</h2>
+        <p class="section-lead" data-reveal>
+          Our hierarchy flows from leadership through development, moderation, and
+          player support. Questions?
+          <a href="https://dsc.gg/aevonsmp" target="_blank" rel="noopener noreferrer">Join Discord</a>.
+        </p>
+
+
+        <div class="staff-org" data-reveal aria-label="Staff hierarchy">
+
+          <div class="staff-org-dept" data-reveal>
+            <h3 class="staff-org-dept__title">Management department</h3>
+            <div class="staff-org-ladder">
+              <div class="staff-tier">
+                <span class="staff-tier__role">Owner</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/aevon.png"
+                        alt="Aevon"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Aevon</h4>
+                    <p class="role">Owner</p>
+                    <p class="bio"></p>
+                  </article>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Manager</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/seeve.png"
+                        alt="Macchiato_"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Macchiato_</h4>
+                    <p class="role">Manager</p>
+                    <p class="bio">“Ilaw ng tahanan”</p>
+                  </article>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Co-Owner</span>
+                <div class="staff-tier__grid">
+                  <p class="staff-slot staff-slot--vacant" aria-label="Co-Owner position open">Open position</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-org-connector" aria-hidden="true"></div>
+          <div class="staff-org-dept" data-reveal>
+            <h3 class="staff-org-dept__title">Development department</h3>
+            <div class="staff-org-ladder">
+              <div class="staff-tier">
+                <span class="staff-tier__role">Owner</span>
+                <div class="staff-tier__grid">
+                  <p class="staff-slot staff-slot--vacant" aria-label="Development owner position open">Open position</p>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Developer</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/klioh_.png"
+                        alt="Klioh_"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Klioh_</h4>
+                    <p class="role">Developer</p>
+                    <p class="bio"></p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/velrix.png"
+                        alt="Velrix"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Velrix</h4>
+                    <p class="role">Assistant Dev &amp; Web Dev</p>
+                    <p class="bio">Mistake</p>
+                  </article>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Architects</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/neko.png"
+                        alt="Neko"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Manekeneko</h4>
+                    <p class="role">Head Architect</p>
+                    <p class="bio">No Bio</p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/lilith.png"
+                        alt="Lilith"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Lilith</h4>
+                    <p class="role">Architect</p>
+                    <p class="bio">"kaog tae"</p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/aevon.png"
+                        alt="Lilith"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Mongkeh</h4>
+                    <p class="role">Architect</p>
+                    <p class="bio">Profile photo coming soon.</p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/sindous.png"
+                        alt="Sindous"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Sindous</h4>
+                    <p class="role">Architect</p>
+                    <p class="bio">//wand</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-org-connector" aria-hidden="true"></div>
+
+          <div class="staff-org-dept" data-reveal>
+            <h3 class="staff-org-dept__title">Administration department</h3>
+            <div class="staff-org-ladder">
+              <div class="staff-tier">
+                <span class="staff-tier__role">Head Admin</span>
+                <div class="staff-tier__grid">
+                  <p class="staff-slot staff-slot--vacant" aria-label="Head Admin position open">Open position</p>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Admin</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/aqui_mp4ki.png"
+                        alt="Aqui_mp4ki"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Aqui_mp4ki</h4>
+                    <p class="role">Admin</p>
+                    <p class="bio">TOMBOY BADDIE NA 20+ WITH DOLPHIN SHORTS</p>
+                  </article>
+
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/mizahki.png"
+                        alt="Mizahki"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Mizahki</h4>
+                    <p class="role">Admin</p>
+                    <p class="bio">To love and to be loved.</p>
+                  </article>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Head Moderator</span>
+                <div class="staff-tier__grid">
+                  <p class="staff-slot staff-slot--vacant" aria-label="Head Moderator position open">Open position</p>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Moderator</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/aslin.png"
+                        alt="Aslin"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Aslin</h4>
+                    <p class="role">Moderator</p>
+                    <p class="bio">batak manood thai GL series</p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/val.png"
+                        alt="Val"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Val</h4>
+                    <p class="role">Moderator</p>
+                    <p class="bio">SoftBloom owner and dedicated moderator passionate about thriving Minecraft communities.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-org-connector" aria-hidden="true"></div>
+
+          <div class="staff-org-dept" data-reveal>
+            <h3 class="staff-org-dept__title">Support department</h3>
+            <div class="staff-org-ladder">
+              <div class="staff-tier">
+                <span class="staff-tier__role">Sr. Support</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/jiwoo.png"
+                        alt="Jiwoo"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Jiwoo</h4>
+                    <p class="role">Sr. Support</p>
+                    <p class="bio">sorry medjo haggard galing pa duty</p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/aevon.png"
+                        alt="Lilith"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Grian</h4>
+                    <p class="role">Sr. Support</p>
+                    <p class="bio">Profile photo coming soon.</p>
+                  </article>
+                </div>
+              </div>
+              <div class="staff-tier">
+                <span class="staff-tier__role">Jr. Support</span>
+                <div class="staff-tier__grid">
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/cyruz.png"
+                        alt="Cyruz"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Cryuz</h4>
+                    <p class="role">Jr. Support</p>
+                    <p class="bio">The McDonald's owner</p>
+                  </article>
+                  <article class="aevon-card staff-card">
+                    <div class="staff-avatar staff-avatar--photo">
+                      <img
+                        src="staff/drei.png"
+                        alt="Drei"
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4>Drei</h4>
+                    <p class="role">Jr. Support</p>
+                    <p class="bio">"it's all yours"</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="wiki" aria-labelledby="wiki-title">
+        <h2 id="wiki-title" class="section-title" data-reveal>Wiki</h2>
+        <div class="wiki-box" data-reveal>
+          <span class="soon-badge">Future</span>
+          <p>
+            A community wiki will be linked here (commands, ranks, economy, world
+            notes). For now, use Discord pins and announcements.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-xl site-footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <p class="footer-brand"><strong>AevonSMP</strong></p>
+            <p class="footer-tagline">
+              Philippine Minecraft SMP for Java &amp; Bedrock. Peace, order, and respect.
+            </p>
+            <p class="footer-disclaimer">
+              Not affiliated with Mojang or Microsoft.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="#connect">Connect</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#vote">Vote</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#staff">Staff</a></li>
+              <li><a href="#shop">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Community</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="https://dsc.gg/aevonsmp" target="_blank" rel="noopener noreferrer">Discord</a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@official_aevon" target="_blank" rel="noopener noreferrer">TikTok</a>
+              </li>
+              <li>
+                <a href="https://wermpay.com/servers/aevonsmp" target="_blank" rel="noopener noreferrer">Store</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Server address</h3>
+            <p class="footer-ip"><code>aevonsmp.online</code></p>
+            <p class="footer-ip-note">Bedrock port <strong>19023</strong></p>
+            <button
+              type="button"
+              class="btn btn-sm btn-aevon-ghost btn-copy"
+              data-copy="aevonsmp.online"
+            >
+              Copy IP
+            </button>
+          </div>
+        </div>
+        <p class="footer-copy">© <span id="footer-year"></span> AevonSMP community</p>
+      </div>
+    </footer>
+
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    <script>
+      (function () {
+        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var revealEls = document.querySelectorAll("[data-reveal]");
+        if (reduceMotion) {
+          revealEls.forEach(function (el) {
+            el.classList.add("is-revealed");
+          });
+        } else if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-revealed");
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { root: null, rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
+          );
+          revealEls.forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          revealEls.forEach(function (el) {
+            el.classList.add("is-revealed");
+          });
+        }
+
+        document.querySelectorAll('.site-navbar a.nav-link[href^="#"]').forEach(function (a) {
+          a.addEventListener("click", function () {
+            var nav = document.getElementById("mainNavCollapse");
+            if (nav && nav.classList.contains("show") && typeof bootstrap !== "undefined") {
+              var inst = bootstrap.Collapse.getInstance(nav);
+              if (inst) inst.hide();
+            }
+          });
+        });
+
+        var toast = document.getElementById("toast");
+        function showToast(msg) {
+          if (!toast) return;
+          toast.textContent = msg;
+          toast.classList.add("is-visible");
+          clearTimeout(showToast._t);
+          showToast._t = setTimeout(function () {
+            toast.classList.remove("is-visible");
+          }, 2000);
+        }
+
+        document.querySelectorAll(".btn-copy").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var text = btn.getAttribute("data-copy");
+            if (!text) return;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(text).then(
+                function () {
+                  showToast("Copied: " + text);
+                },
+                function () {
+                  showToast("Could not copy");
+                }
+              );
+            } else {
+              showToast(text);
+            }
+          });
+        });
+
+        var yearEl = document.getElementById("footer-year");
+        if (yearEl) {
+          yearEl.textContent = String(new Date().getFullYear());
+        }
+
+        var backToTop = document.getElementById("backToTop");
+        if (backToTop) {
+          window.addEventListener(
+            "scroll",
+            function () {
+              var show = window.scrollY > 480;
+              backToTop.hidden = !show;
+              backToTop.classList.toggle("is-visible", show);
+            },
+            { passive: true }
+          );
+          backToTop.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: reduceMotion ? "auto" : "smooth",
+            });
+          });
+        }
+
+        var navLinks = document.querySelectorAll('.site-navbar a.nav-link[href^="#"]');
+        var sections = document.querySelectorAll("#main-content > section[id]");
+        if (navLinks.length && sections.length) {
+          function setActiveNav() {
+            var offset = 120;
+            var current = sections[0].id;
+            sections.forEach(function (section) {
+              if (section.getBoundingClientRect().top <= offset) {
+                current = section.id;
+              }
+            });
+            navLinks.forEach(function (link) {
+              link.classList.toggle("is-active", link.getAttribute("href") === "#" + current);
+            });
+          }
+          setActiveNav();
+          window.addEventListener("scroll", setActiveNav, { passive: true });
+        }
+      })();
+    </script>
+  </body>
+</html>
